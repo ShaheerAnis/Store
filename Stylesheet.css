@@ -1,0 +1,183 @@
+*{/*for all*/    
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*main*/
+.main{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #9c27b0, #8ecdff);
+}
+/*Navigation bar*/
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    
+}
+
+/*Logo*/
+.logo
+{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 130px;
+    height: 100px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;/*Circle alighnment*/
+    transform: translateY(-50%);
+}
+#circle{
+    margin: 90px;
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: -10;
+    left: 0;
+    border-radius: 200%;
+/*    background: #ccc;*/
+    transform: rotate(0deg);
+    transition: 1s;
+    
+}
+
+.featuretwo img{
+    width: 50px;
+    height: 50px;
+}
+.featureone img{
+    width: 50px;
+    height: 50px;
+}
+
+.featurethree img{
+    width: 50px;
+    height: 50px;
+}
+.featurefour img{
+    height: 50px;
+    width: 50px;
+}
+.featureone div{
+    margin-top: 0px;
+}
+.featuretwo div{
+    margin-top: 0px;
+}
+.featurethree div{
+    margin-top: 0px;
+}
+.featurefour div{
+    margin-top: 0px;
+}
+.featureone div p,h1{
+    margin-top: 0px;
+    margin-left: 5px;   
+}
+
+.featuretwo div p {
+    margin-top: 5px;
+    margin-left: 6px;
+}
+.featurethree div p{
+    margin-top: 5px;
+}
+.featurefour div p{
+    margin-top: 5px;    
+}
+.featureone{
+    display: flex;
+    color: whitesmoke;
+    position: absolute;
+    top: 375px;
+    right: 50px;
+    }
+.featuretwo{
+    display: flex;
+    color: whitesmoke;
+    position: absolute;
+    top: 150px;
+    left:300px;
+    transform: rotate(-90deg);
+}
+.featurethree{
+    display: flex;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 375px;
+    left:50px;
+    transform: rotate(-180deg);
+}
+.featurefour{
+    display: flex;
+    color: whitesmoke;
+    position: absolute;
+    bottom:140px;
+    right: 260px;
+    transform: rotate(-270deg);
+}
+.mobile{
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.controls h3{
+    margin: 15px 0;
+    color:#fff;
+}
+#upBtn{
+    width: 15px;
+    cursor: pointer;
+}
+#downBtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid whitesmoke ;
+    border-right: 500px solid transparent ;
+    border-bottom: 500px solid whitesmoke ;
+    border-left: 500px solid whitesmoke ;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
